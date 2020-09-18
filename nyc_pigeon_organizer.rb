@@ -64,7 +64,7 @@ def nyc_pigeon_organizer(data)
   data.each_with_object({}) do |(key, value), new_hash|
     value.each { |inner_key, inner_values|
       inner_values.each {|val|
-        new_hash[val] = ""
+        new_hash[val].push(inner_key)
       }
     }
     binding.pry
