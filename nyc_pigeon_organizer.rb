@@ -78,7 +78,6 @@ def nyc_pigeon_organizer(data)
     # binding.pry
     new_hash
   end
-
 end
 
 pp nyc_pigeon_organizer(pigeon_data)
