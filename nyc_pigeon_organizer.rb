@@ -70,7 +70,6 @@ def nyc_pigeon_organizer(data)
         else
           new_hash[name][key].push(inner_values)
         end
-
       }
     }
     binding.pry
