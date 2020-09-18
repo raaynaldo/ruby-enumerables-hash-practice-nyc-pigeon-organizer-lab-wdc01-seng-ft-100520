@@ -66,8 +66,11 @@ def nyc_pigeon_organizer(data)
       inner_values.each {|name|
         if !new_hash[name]
           new_hash[name] = {}
+          new_hash[name][key] = []
+        else
+          new_hash[name][key].push(inner_values)
         end
-        new_hash[name][key] = ""
+
       }
     }
     binding.pry
