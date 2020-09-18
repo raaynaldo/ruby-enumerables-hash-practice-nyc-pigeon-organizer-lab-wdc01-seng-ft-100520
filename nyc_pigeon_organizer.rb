@@ -64,13 +64,13 @@ def nyc_pigeon_organizer(data)
   data.each_with_object({}) do |(key, value), new_hash|
     value.each { |inner_key, inner_values|
       inner_values.each {|val|
-        new_hash[val] = key
+        new_hash[val] = {key => ""}
       }
     }
     binding.pry
     new_hash
   end
-  
+
 end
 
 pp nyc_pigeon_organizer(pigeon_data)
