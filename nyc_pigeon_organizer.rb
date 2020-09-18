@@ -63,6 +63,7 @@ def nyc_pigeon_organizer(data)
   # binding.pry
   data.each_with_object({}) do |(key, value), new_hash|
     value.each { |inner_key, inner_values|
+      binding.pry
       inner_values.each {|name|
         if !new_hash[name]
           new_hash[name] = {}
